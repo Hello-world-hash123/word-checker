@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Checker: Countable vs Uncountable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Countable vs Uncountable Word Checker</h1>
+        <p>Enter a word to check if it's countable or uncountable!</p>
+        
+        <!-- Input for the word -->
+        <div class="input-section">
+            <input type="text" id="wordInput" placeholder="Enter a word">
+            <button onclick="checkWord()">Check Word</button>
+        </div>
+
+        <!-- Result Display -->
+        <div id="result" class="result"></div>
+
+        <!-- Classification Section -->
+        <div id="classification-section" class="classification-section" style="display: none;">
+            <p>How would you classify the word <strong><span id="classified-word"></span></strong>?</p>
+            <button onclick="addToList('countable')">Countable</button>
+            <button onclick="addToList('uncountable')">Uncountable</button>
+        </div>
+
+        <!-- Word Lists -->
+        <h2>Word Lists:</h2>
+        <h3>Countable Words:</h3>
+        <ul id="countableList"></ul>
+        <h3>Uncountable Words:</h3>
+        <ul id="uncountableList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
